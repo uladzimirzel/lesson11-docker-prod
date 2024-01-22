@@ -4,4 +4,3 @@ RUN apt update
 RUN apt install tomcat9
 WORKDIR /usr/local/tomcat/
 RUN COPY --from=build /root/boxfuse-sample-java-war-hello /usr/local/tomcat/webapps
-EXPOSE 8080
